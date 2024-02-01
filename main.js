@@ -21,9 +21,10 @@ populatedBoard(16);
 
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
+        document.querySelector('.error').style.display = 'none';
         populatedBoard(input);
     } else {
-        console.log("too many squares");
+        document.querySelector('.error').style.display = 'flex';
     }
 }
 function colorSquare() {

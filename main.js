@@ -21,12 +21,13 @@ populatedBoard(16);
 
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
-        document.querySelector('.error').style.display = 'none';
-        populatedBoard(input);
+      document.querySelector(".error").style.display = "none";
+      populatedBoard(input);
     } else {
-        document.querySelector('.error').style.display = 'flex';
+      document.querySelector(".error").style.display = "flex";
     }
-}
+  }
+
 function colorSquare() {
     if (click) {
         if (color === 'random'){
